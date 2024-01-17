@@ -70,3 +70,4 @@ function calcularGanador(cuadros) {
     }
     return null;
 }
+

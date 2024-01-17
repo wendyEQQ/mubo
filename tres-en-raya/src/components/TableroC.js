@@ -8,9 +8,13 @@ function TableroC() {
     const [cuadros, setCuadros] = useState(Array(9).fill(null));
     const [jugador, setJugador] = useState("O");
     const click = (i) => {
+        console.log(i);
+        console.log(jugador);
         const cuadrosTemp = [...cuadros];
         cuadrosTemp[i] = jugador;
         setCuadros(cuadrosTemp);
+        console.log(cuadros);
+        setJugador(jugador==="X"? "O": "X");
         if (jugador === "X") {
             setJugador("O");
         } else {

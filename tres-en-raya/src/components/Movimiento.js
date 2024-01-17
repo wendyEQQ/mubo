@@ -6,7 +6,7 @@ function Movimiento({ descripcion, funcion }) {
         <button className="movimiento" onClick={funcion}>
             {descripcion}
         </button>
-
+        
     );
 }
 
