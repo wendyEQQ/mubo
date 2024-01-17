@@ -29,7 +29,7 @@ function Juego() {
             setNroMovimiento(nuevoMovimiento.length);
         }
         if (calcularGanador(cuadros) !== null) {
-            setGanador(calcularGanador(cuadros));
+            setGanador(calcularGanador(cuadros)); //se setea
         }
     }
     const saltarA = (movimiento) => {
@@ -45,7 +45,7 @@ function Juego() {
                 <h2>{ganador ? `Ganador: ${ganador}` : `Próximo jugador: ${jugador}`}</h2>
                 <TableroE cuadros={movimientoActual.cuadros} onClick={(i) => click(i)} />
             </div>
-            <Historial historial={historial} saltarA={saltarA} />
+            <Historial historial={historial} saltarA={saltarA} /> //se llama a "historial"
         </div>
     );
 }
